@@ -1,21 +1,34 @@
-name: Deploy Hugo Site
+name: Deploy static content to Pages
 
 on:
   push:
-    branches:
-      - main  # Change this if your main branch is named differently
+    branches: ["main"]  # Trigger on pushes to the main branch
+  workflow_dispatch:  # Allows manual triggering
+
+permissions:
+  contents: read  # Read access to repository contents
+  pages: write    # Write access to GitHub Pages
+  id-token: write  # Write access for ID tokens
+
+concurrency:
+  group: "pages"  # Group for concurrency control
+  cancel-in-progress: false  # Do not cancel in-progress runs
 
 jobs:
   deploy:
+    environment:
+      name: github-pages  # Specify the environment
+      url: ${{ steps.deployment.outputs.page_url }}  # URL of the deployed page
     runs-on: ubuntu-latest
-
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v2
-
-      - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v3
+      - name: Checkout
+        uses: actions/checkout@v4  # Checkout the code
+      - name: Setup Pages
+        uses: actions/configure-pages@v5  # Configure GitHub Pages
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./public  # This is where your pre-built site is located
-          publish_branch: gh-pages  # Change this if you want to use a different branch
+          path: '.'  # Upload the entire repository
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4  # Deploy the uploaded artifact
