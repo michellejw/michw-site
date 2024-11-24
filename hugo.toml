@@ -14,11 +14,11 @@ enableEmoji = true
 ## Publish
 ## -----------------------------------------------
 
-relativeURLs = "true"
+relativeURLs = "false"
 #canonifyURLs = "true"
 
 # Local
-baseURL = "/"
+baseURL = "https://michellejw.github.io/michw-site/"
 publishDir = "public"
 
 # Remote
