@@ -1,29 +1,21 @@
-   name: Deploy Hugo Site
+name: Deploy Hugo Site
 
-   on:
-     push:
-       branches:
-         - main  # Change this if your main branch is named differently
+on:
+  push:
+    branches:
+      - main  # Change this if your main branch is named differently
 
-   jobs:
-     build:
-       runs-on: ubuntu-latest
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
 
-       steps:
-         - name: Checkout code
-           uses: actions/checkout@v2
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
 
-         - name: Set up Hugo
-           uses: peaceiris/actions-hugo@v3
-           with:
-             hugo-version: 'extended'  
-
-         - name: Build
-           run: hugo --minify  # Builds the site with minification
-
-         - name: Deploy to GitHub Pages
-           uses: peaceiris/actions-gh-pages@v3
-           with:
-             github_token: ${{ secrets.GITHUB_TOKEN }}
-             publish_dir: ./public  # This is where Hugo outputs the built site
-             publish_branch: gh-pages  # Change this if you want to use a different branch
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./public  # This is where your pre-built site is located
+          publish_branch: gh-pages  # Change this if you want to use a different branch
