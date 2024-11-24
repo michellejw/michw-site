@@ -1,14 +1,14 @@
 <nav class="nav-wrapper">
     <div class="inner">
         <div class="logo">
-            <a href="/">
-                <img src="/images/mw-logo.png" alt="Michelle Weirathmueller" />
+            <a href="{{ .Site.BaseURL }}">
+                <img src="{{ .Site.BaseURL }}images/mw-logo.png" alt="Michelle Weirathmueller" />
             </a>
         </div>
         <div class="nav-links">
-            <a href="/">Home</a>
-            <a href="/blog/">Blog</a>
-            <a href="/contact/">Contact</a>
+            <a href="{{ .Site.BaseURL }}">Home</a>
+            <a href="{{ .Site.BaseURL }}blog/">Blog</a>
+            <a href="{{ .Site.BaseURL }}contact/">Contact</a>
         </div>
     </div>
 </nav>
