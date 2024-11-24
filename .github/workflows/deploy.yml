@@ -14,7 +14,7 @@
            uses: actions/checkout@v2
 
          - name: Set up Hugo
-           uses: peaceiris/actions-hugo@v2
+           uses: peaceiris/actions-hugo@v3.0.0
            with:
              hugo-version: 'extended'  # Use the extended version of Hugo
 
