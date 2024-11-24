@@ -1,0 +1,36 @@
+id: "skills"
+title : "Professional Skills"
+content: |
+  A brief summary.
+style: "style1 medium onscroll-fade-in"
+items:
+  # feature item loop
+  - name : "Data cleaning"
+    content : "Is there anything more satisfying than cleaning up and organizing a giant, messy dataset?"
+    style : "style2 major fa-broom"
+
+  # feature item loop
+  - name : "Data analysis"
+    content : "Oh but then there’s the part where you take the nice dataset and figure out what it all means. (I WILL take the FFT, don’t think I won’t)"
+    style : "style2 major fa-chart-line"
+    
+  # feature item loop
+  - name : "Data visualization"
+    content : "What’s that saying... a graphic is worth a thousand numbers? Or a bazillion numbers? Either way – I’ll make it pretty and informative."
+    style : "style2 major fa-chart-pie"
+    
+  # feature item loop
+  - name : "Programming/Development"
+    content : "If I’m writing code all day long, it is a great day. (Python, R, Matlab, Java, and more recently – Dart and Flutter)"
+    style : "style2 major fa-code"
+    
+  # feature item loop
+  - name : "Science communication"
+    content : "Ditching jargon and making science understandable since 2005."
+    style : "style2 major fa-comments"
+    
+  # feature item loop
+  - name : "Illustration"
+    content : "Technical, scientific, and just-for-fun illustration. Vector and raster goodness, whether it’s for a wedding invitation, a logo, a greenhouse gas infographic, or a travel poster – I’m your gal."
+    style : "style2 major fa-paint-brush"
+    

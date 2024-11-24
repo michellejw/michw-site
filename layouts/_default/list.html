@@ -1,0 +1,25 @@
+{{ define "main" }}
+<section class="wrapper style1 align-center">
+    <div class="inner">
+        <h1>Blog</h1>
+
+        <!-- Original content -->
+        <div class="index align-left">
+            {{ range .Pages }}
+                <section>
+                    <header>
+                        <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
+                        <p>{{ .Date.Format "January 2, 2006" }}</p>
+                    </header>
+                    <div class="content">
+                        {{ .Summary }}
+                        <ul class="actions">
+                            <li><a href="{{ .Permalink }}" class="button">Read More</a></li>
+                        </ul>
+                    </div>
+                </section>
+            {{ end }}
+        </div>
+    </div>
+</section>
+{{ end }}

@@ -1,0 +1,10 @@
+####################### Banner #########################
+style: "style1 orient-left content-align-left image-position-right fullscreen onload-image-fade-in onload-content-fade-right"
+title : "Michelle Weirathmueller, PhD"
+subtitle: |
+  <p>Programmer, Scientist, and Data Visualizer</p>
+content : |
+  <strong>Welcome</strong> and thanks for stopping by. Take a little browse around if you feel like it. Give me a shout if you’d like to collaborate, write code with me, have coffee, paint together, or just to say hi!
+
+image : "images/code-image.jpg"
+

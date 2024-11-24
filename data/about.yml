@@ -1,0 +1,10 @@
+####################### Spotlight #########################
+style: "style4 orient-right content-align-left image-position-center onscroll-image-fade-in"
+id: "about"
+title : "About"
+content: |
+  <p>I'm Michelle Weirathmueller. I have a PhD in oceanography and a background in underwater acoustics and signal processing. Over the past several years, much of my work has focused on animal movement modeling and underwater noise exposure assessments. I love writing code and diving into complex datasets, transforming them into intuitive graphics and interactive visualizations that make information accessible to everyone.</p>
+  <p>I recently founded Waveform Analytics, where I bring together my passion for data with my expertise in coding and visualization. At Waveform Analytics, I provide services in data visualization, data analysis, and scientific programming.</p>
+  <p>With my background in science, engineering, and illustration, I’m your go-to person for projects that involve quantitative analysis, software development, science communication—or all of the above!</p>
+
+image: "images/wave-square.png"

@@ -1,0 +1,14 @@
+{{ define "main" }}
+<section class="wrapper style1 align-center">
+    <div class="inner">
+        <h1>{{ .Title }}</h1>
+        <p>{{ .Date.Format "January 2, 2006" }}</p>
+        <div class="content align-left">
+            {{ .Content }}
+        </div>
+        <ul class="actions">
+            <li><a href="/blog" class="button">Back to Blog</a></li>
+        </ul>
+    </div>
+</section>
+{{ end }}
