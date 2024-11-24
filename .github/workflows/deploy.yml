@@ -16,7 +16,7 @@
          - name: Set up Hugo
            uses: peaceiris/actions-hugo@v2
            with:
-             hugo-version: 'latest'  # You can specify a version if needed
+             hugo-version: 'extended'  # Use the extended version of Hugo
 
          - name: Build
            run: hugo --minify  # Builds the site with minification
