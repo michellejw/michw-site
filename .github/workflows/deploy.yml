@@ -14,9 +14,9 @@
            uses: actions/checkout@v2
 
          - name: Set up Hugo
-           uses: peaceiris/actions-hugo@v3.0.0
+           uses: peaceiris/actions-hugo@v3
            with:
-             hugo-version: 'extended'  # Use the extended version of Hugo
+             hugo-version: 'extended'  
 
          - name: Build
            run: hugo --minify  # Builds the site with minification
