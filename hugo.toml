@@ -18,7 +18,7 @@ relativeURLs = "false"
 #canonifyURLs = "true"
 
 # Local
-baseURL = "https://michellejw.github.io/michw-site/"
+baseURL = "https://michw.com/"
 publishDir = "public"
 
 # Remote

@@ -12,7 +12,7 @@ relativeURLs = "true"
 #canonifyURLs = "true"
 
 # Local
-baseURL = "/"
+baseURL = "https://michw.com/"
 publishDir = "public"
 
 # Remote
