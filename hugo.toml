@@ -3,7 +3,7 @@
 ## -----------------------------------------------
 
 theme = "hugo-story"
-title = "Michelle Weirathmueller"
+title = "Michelle Weirathmueller's personal site"
 
 # Explicitly enable all kinds
 enableRobotsTXT = true
